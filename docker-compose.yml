@@ -1,0 +1,11 @@
+version: '3'
+services:
+  playwright-test:
+    image: playwright-python
+    build: 
+      context: ..
+      dockerfile: others/Dockerfile
+    container_name: playwright_docker_python
+    volumes:
+      - ${PWD}/..:/tests
+    command: pytest tests/web
