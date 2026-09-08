@@ -1,0 +1,27 @@
+{
+  "C95": {
+    "file_name": "test_product_checkout.py",
+    "class_name": "TestProductCheckout",
+    "function_name": "test_product_checkout"
+  },
+  "C96": {
+    "file_name": "test_invalid_login.py",
+    "class_name": null,
+    "function_name": "test_invalid_login"
+  },
+  "C97": {
+    "file_name": "test_add_remove_cart.py",
+    "class_name": null,
+    "function_name": "test_add_remove_cart"
+  },
+  "C98": {
+    "file_name": "test_empty_cart_checkout.py",
+    "class_name": null,
+    "function_name": "test_empty_cart_checkout"
+  },
+  "C99": {
+    "file_name": "test_view_order_details.py",
+    "class_name": null,
+    "function_name": "test_view_order_details"
+  }
+}
