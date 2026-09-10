@@ -1,0 +1,51 @@
+[
+  {
+    "file_path": "pageObjects/web/common_scenario.py",
+    "component": "common_scenario",
+    "dependencies": [],
+    "locator_keys": [],
+    "exposed_functions": []
+  },
+  {
+    "file_path": "pageObjects/web/dashboard_page.py",
+    "component": "dashboard_page",
+    "dependencies": [],
+    "locator_keys": [],
+    "exposed_functions": []
+  },
+  {
+    "file_path": "pageObjects/web/cart_page.py",
+    "component": "cart_page",
+    "dependencies": [],
+    "locator_keys": [],
+    "exposed_functions": []
+  },
+  {
+    "file_path": "pageObjects/web/orders_history_page.py",
+    "component": "orders_history_page",
+    "dependencies": [],
+    "locator_keys": [],
+    "exposed_functions": []
+  },
+  {
+    "file_path": "pageObjects/web/common_page.py",
+    "component": "common_page",
+    "dependencies": [],
+    "locator_keys": [],
+    "exposed_functions": []
+  },
+  {
+    "file_path": "pageObjects/web/login_page.py",
+    "component": "login_page",
+    "dependencies": [],
+    "locator_keys": [],
+    "exposed_functions": []
+  },
+  {
+    "file_path": "pageObjects/web/orders_review_page.py",
+    "component": "orders_review_page",
+    "dependencies": [],
+    "locator_keys": [],
+    "exposed_functions": []
+  }
+]
