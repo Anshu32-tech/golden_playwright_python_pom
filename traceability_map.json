@@ -1,0 +1,7 @@
+{
+  "C47": {
+    "file_name": "tests/web/scripts/test_suite_01_scripts.py",
+    "class_name": "TestSuite01Scripts",
+    "function_name": "test_login_flow"
+  }
+}
