@@ -1,0 +1,10 @@
+{
+  "ui_map_file_path": "locators/login_page.json",
+  "missing_locators": [
+    "username_field",
+    "password_field",
+    "login_button",
+    "loading_indicator"
+  ],
+  "existing_json_content": ""
+}
