@@ -1,6 +1,6 @@
 import pytest
-from playwright.sync_api import Page
-from pageObjects.LoginPage import LoginPage
+from playwright.sync_api import Page, expect
+from pageObjects.loginPage import LoginPage
 
 
 class TestSuite01Scripts:
@@ -13,7 +13,7 @@ class TestSuite01Scripts:
         self.loginPage = LoginPage(page)
 
     def test_login_flow(self):
-        """Test login flow"""
+        """Test login flow with username input and login button click"""
         # Navigate to the login page
         self.loginPage.go_to()
         
@@ -22,3 +22,6 @@ class TestSuite01Scripts:
         
         # Click on the Login button
         self.loginPage.click_login_button()
+        
+        # Assertion to verify successful login
+        expect(self.page).to_have_url(lambda url: "dashboard" in url or "home" in url, timeout=10000)
