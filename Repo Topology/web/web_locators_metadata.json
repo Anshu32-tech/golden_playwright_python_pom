@@ -44,5 +44,14 @@
       "orderConfirmationText": ".hero-primary",
       "orderId": ".em-spacer-1 .ng-star-inserted"
     }
+  },
+  {
+    "file_path": "locators/login_page.json",
+    "locators": {
+      "username_field": "TBD_username_field",
+      "password_field": "TBD_password_field",
+      "login_button": "TBD_login_button",
+      "loading_indicator": "TBD_loading_indicator"
+    }
   }
 ]
