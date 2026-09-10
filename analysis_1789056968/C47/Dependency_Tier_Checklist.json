@@ -1,0 +1,106 @@
+{
+  "aava_config": {
+    "aava_username": "Anshu.lalwani@ntorinfotech.com",
+    "repo_owner": "Anshu32-tech",
+    "repo_name": "golden_playwright_python_pom",
+    "branch": "feature/test/testing",
+    "intent_path": "pageObjects",
+    "platform": "web",
+    "analysis_path": "analysis_1789056968/C47",
+    "test_script_path": "tests/web/scripts/test_suite_01_scripts.py",
+    "requires_flow_container": false,
+    "language": "python",
+    "framework": "playwright",
+    "traceability_map_path": "traceability_map.json"
+  },
+  "test_case_id": "C47",
+  "tiers": {
+    "Tier_1_Locators": [
+      {
+        "ui_map_file": "login_page.json",
+        "page_class_file": "login_page.py",
+        "missing_locators": [
+          "username_field",
+          "password_field",
+          "login_button",
+          "loading_indicator"
+        ]
+      }
+    ],
+    "Tier_2_Indep_Pages": [
+      {
+        "file": "login_page.py",
+        "class_name": "LoginPage",
+        "situation": "Situation-3",
+        "resolved_intents": [],
+        "missing_methods": [
+          {
+            "intent": "Navigate to the login page",
+            "proposed_signature": "go_to()",
+            "detailed_requirements": "Navigate to the login page URL. Wait for the page to load completely and verify that key login page elements (username field, password field, login button) are visible.",
+            "implementation_checklist": [
+              "Navigate to the login page URL using driver navigation method",
+              "Wait for page to load completely",
+              "Wait for 'username_field' to be visible",
+              "Wait for 'password_field' to be visible",
+              "Wait for 'login_button' to be visible",
+              "Verify 'username_field' is displayed",
+              "Verify 'password_field' is displayed",
+              "Verify 'login_button' is displayed"
+            ],
+            "required_locator_keys": [
+              "username_field",
+              "password_field",
+              "login_button"
+            ]
+          },
+          {
+            "intent": "Input username",
+            "proposed_signature": "input_username(username)",
+            "detailed_requirements": "Locate the username input field, clear any existing text, and input the provided username parameter. Verify the text was entered successfully.",
+            "implementation_checklist": [
+              "Wait for 'username_field' to be visible",
+              "Wait for 'username_field' to be enabled",
+              "Clear any existing text from 'username_field'",
+              "Input the username parameter into 'username_field'",
+              "Get text from 'username_field'",
+              "Verify the retrieved text matches the input username parameter"
+            ],
+            "required_locator_keys": [
+              "username_field"
+            ]
+          },
+          {
+            "intent": "Click on the Login button",
+            "proposed_signature": "click_login_button()",
+            "detailed_requirements": "Locate the login button element, wait for it to be clickable, and perform a click action. Wait for any loading indicators to disappear after clicking.",
+            "implementation_checklist": [
+              "Wait for 'login_button' to be visible",
+              "Wait for 'login_button' to be clickable",
+              "Click 'login_button'",
+              "Wait for 'loading_indicator' to disappear (if present)",
+              "Wait for page transition or next page element to be visible"
+            ],
+            "required_locator_keys": [
+              "login_button",
+              "loading_indicator"
+            ]
+          }
+        ],
+        "path": "pageObjects/login_page.py",
+        "locator_gaps": {
+          "ui_map_file": "login_page.json",
+          "present_locators": [],
+          "missing_locators": [
+            "username_field",
+            "password_field",
+            "login_button",
+            "loading_indicator"
+          ]
+        }
+      }
+    ],
+    "Tier_3_Dep_Pages": [],
+    "Tier_99_Ref": []
+  }
+}
