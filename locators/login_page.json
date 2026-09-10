@@ -1,0 +1,6 @@
+{
+  "username_field": "TBD_username_field",
+  "password_field": "TBD_password_field",
+  "login_button": "TBD_login_button",
+  "loading_indicator": "TBD_loading_indicator"
+}
