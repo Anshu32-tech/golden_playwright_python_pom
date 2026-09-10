@@ -20,5 +20,6 @@
       "mapped_function": "click_login_button",
       "page_object_name": "loginPage"
     }
-  ]
+  ],
+  "previous_feedback": "Missing assertions: The test script executes steps but lacks any assertion statements to validate the test outcome. Add at least one Playwright expect assertion to verify the application state after login."
 }
