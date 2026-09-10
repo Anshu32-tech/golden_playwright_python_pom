@@ -1,0 +1,1 @@
+[{"step":"1. Navigate to /login.","granular_expansion":[{"intent":"Navigate to the login page","predicted_code":"login_page.go_to()"}]},{"step":"2. Enter username 'admin'.","granular_expansion":[{"intent":"Input username","predicted_code":null}]},{"step":"3. Click login.","granular_expansion":[{"intent":"Click on the Login button","predicted_code":null}]}]
