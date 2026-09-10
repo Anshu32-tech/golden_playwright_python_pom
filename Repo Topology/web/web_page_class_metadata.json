@@ -47,5 +47,68 @@
     "dependencies": [],
     "locator_keys": [],
     "exposed_functions": []
+  },
+  {
+    "file_path": "pageObjects/login_page.py",
+    "component": "login_page",
+    "dependencies": [],
+    "locator_keys": [
+      "loading_indicator",
+      "password_field",
+      "login_button",
+      "username_field",
+      "username_field",
+      "login_button",
+      "password_field",
+      "username_field",
+      "loading_indicator",
+      "login_button"
+    ],
+    "exposed_functions": [
+      {
+        "signature": "load_locator",
+        "purpose": "Loads and parses a JSON locator file from the web locators directory, returning the locator configuration as a dictionary.",
+        "input_parameters": [
+          "filename"
+        ],
+        "output_parameters": [
+          "Any"
+        ]
+      },
+      {
+        "signature": "go_to",
+        "purpose": "Navigates to the login page URL and verifies that all key login elements (username field, password field, login button) are visible and accessible.",
+        "input_parameters": [],
+        "output_parameters": [
+          "Any"
+        ]
+      },
+      {
+        "signature": "input_username",
+        "purpose": "Inputs the provided username into the username field, clearing any existing text and verifying successful entry.",
+        "input_parameters": [
+          "username"
+        ],
+        "output_parameters": [
+          "Any"
+        ]
+      },
+      {
+        "signature": "load_test_data",
+        "purpose": "Loads and returns parsed JSON test data from the test_data.json file located in the testData/web directory.",
+        "input_parameters": [],
+        "output_parameters": [
+          "Any"
+        ]
+      },
+      {
+        "signature": "click_login_button",
+        "purpose": "Clicks the login button and waits for page transition, handling loading indicators and ensuring the page reaches a stable network idle state.",
+        "input_parameters": [],
+        "output_parameters": [
+          "Any"
+        ]
+      }
+    ]
   }
 ]
